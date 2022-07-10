@@ -4,9 +4,9 @@ name: Action_Kernel
 on:
 
   push:
-    branches: [ GCC-5.1 ]
+    branches: [ GCC-4.9 ]
   pull_request:
-    branches: [ GCC-5.1 ]
+    branches: [ GCC-4.9 ]
 
 
 
