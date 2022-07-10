@@ -5,6 +5,8 @@ export CROSS_COMPILE_ARM32=$GITHUB_WORKSPACE/kernel/tool/arm/bin/arm-linux-andro
 
 echo "=========================Clean========================="
 rm -rf $KERNEL_PATH/out/ *.zip
+git submodule init
+git submodule update
 make mrproper && git reset --hard HEAD
 
 echo "=========================make========================="
